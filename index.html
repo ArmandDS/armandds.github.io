@@ -234,11 +234,11 @@ function run(graph) {
         data.forEach(function(d) {
 		document.getElementById("demo1").innerHTML = d;
           d3.select("#link-"+d.source+"-"+d.target)
-              .attr("fill","red")
+              .style("fill","red")
               .transition()
               .delay(1500)
               .duration(500)
-              .attr("fill","#f6f6f6")
+              .style("fill","#f6f6f6")
           })
 
    }, 3000);
