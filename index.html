@@ -205,6 +205,7 @@ function run(graph) {
             .data(graph.nodes)
   .enter().append("circle")
           .attr("r", 2)
+           .attr("id", function(d) { return "link-"+d.source+"-"+d.target; })
           .call(d3.drag()
               .on("start", dragstarted)
               .on("drag", dragged)
