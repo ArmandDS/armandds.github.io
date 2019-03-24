@@ -84,9 +84,9 @@ var width = document.getElementById('container1').offsetWidth;
 		
 	width = parseInt(svg.style("width"), 10);
     height = parseInt(svg.style("height"), 10);	
-		document.getElementById("demo1").innerHTML = width;
+		//.getElementById("demo1").innerHTML = width;
 		
-		document.getElementById("demo").innerHTML = height;
+		//.getElementById("demo").innerHTML = height;
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
     //.force("charge", d3.forceManyBody().strength(-200))
@@ -174,7 +174,7 @@ function run(graph) {
         .attr("y2", function(d) { return d.target.y; });
 
     node
-         .attr("r", 10)
+         .attr("r", 3)
          .style("fill", "lightsteelblue")
          .style("stroke", "white")
          .style("stroke-width", "2px")
