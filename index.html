@@ -91,9 +91,9 @@ var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
     //.force("charge", d3.forceManyBody().strength(-200))
 		.force('charge', d3.forceManyBody()
-      .strength(-100)
+      .strength(-200)
       .theta(0.8)
-      .distanceMax(50)
+      .distanceMax(70)
     )
 // 		.force('collide', d3.forceCollide()
 //       .radius(d => 40)
@@ -150,7 +150,7 @@ const graph = {
 	  {"source": "1", "target": "2", "value": 1},
     {"source": "26", "target": "28", "value": 1},
     {"source": "30", "target": "18", "value": 1},
-    {"source": "4", "target": "1", "value": 1},
+    {"source": "14", "target": "11", "value": 1},
     {"source": "21", "target": "16", "value": 1},
     {"source": "23", "target": "1", "value": 1}  
   ]
