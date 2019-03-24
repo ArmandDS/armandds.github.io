@@ -67,8 +67,9 @@ fill:#555;
 	       </div> <div class="col-lg-1"></div> </div>
 	       
 	       
-	  
-        
+	 <p id="demo1"/></p>
+	       
+        <p id="demo"></p>
         
         <script>
 
@@ -80,6 +81,11 @@ var svg = d3.select("#ccs")
 var width = document.getElementById('container1').offsetWidth;
 		
 	var height = document.getElementById('container1').offsetHeight;
+		
+		
+		document.getElementById("demo1").innerHTML = width;
+		
+		document.getElementById("demo").innerHTML = height;
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
     //.force("charge", d3.forceManyBody().strength(-200))
