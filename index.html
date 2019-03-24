@@ -135,7 +135,7 @@ function run(graph) {
   });           
 
   var link = svg.append("g")
-                .style("stroke", "#aaa")
+                .style("stroke", " #7E191B")
                 .selectAll("line")
                 .data(graph.links)
                 .enter().append("line");
@@ -174,10 +174,10 @@ function run(graph) {
         .attr("y2", function(d) { return d.target.y; });
 
     node
-         .attr("r", 3)
-         .style("fill", "lightsteelblue")
+         .attr("r", 5)
+         .style("fill", " #FCD12A")
          .style("stroke", "white")
-         .style("stroke-width", "2px")
+         .style("stroke-width", "1px")
          .attr("cx", function (d) { return d.x+5; })
          .attr("cy", function(d) { return d.y-3; });
     
