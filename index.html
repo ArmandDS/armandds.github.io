@@ -88,7 +88,7 @@ var width = document.getElementById('container1').offsetWidth;
 		
 		//.getElementById("demo").innerHTML = height;
 var simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }))
+    .force("link", d3.forceLink().id(function(d) { return d.id; })
         .strength(0.025))
     //.force("charge", d3.forceManyBody().strength(-200))
 		.force('charge', d3.forceManyBody()
