@@ -220,11 +220,12 @@ function run(graph) {
       .links(graph.links);
 
   function ticked() {
-    link
+   /*link
         .attr("x1", function(d) { return d.source.x; })
         .attr("y1", function(d) { return d.source.y; })
         .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; });
+        .attr("y2", function(d) { return d.target.y; });*/
+	 link.attr("d", positionLink);
 
     node
          .attr("r",5)
@@ -261,6 +262,26 @@ function dragended(d) {
   if (!d3.event.active) simulation.alphaTarget(0);
   //simulation.unfix(d);
 }
+		
+	function positionLink(d) {
+        var offset = 30;
+
+        var midpoint_x = (d.source.x + d.target.x) / 2;
+        var midpoint_y = (d.source.y + d.target.y) / 2;
+
+        var dx = (d.target.x - d.source.x);
+        var dy = (d.target.y - d.source.y);
+
+        var normalise = Math.sqrt((dx * dx) + (dy * dy));
+
+        var offSetX = midpoint_x + offset*(dy/normalise);
+        var offSetY = midpoint_y - offset*(dx/normalise);
+
+        return "M" + d.source.x + "," + d.source.y +
+            "S" + offSetX + "," + offSetY +
+            " " + d.target.x + "," + d.target.y;
+    }	
+		
   
 run(graph)
 
