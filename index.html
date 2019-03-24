@@ -231,15 +231,17 @@ function run(graph) {
          // randomly links instead of calling external file:
          var data = graph.nodes.filter(function(d) { if (Math.random() < 0.5) return d; })
 	var randomItem = data[Math.floor(Math.random()*data.length)];
-		document.getElementById("demo1").innerHTML=randomItem.id ;
+		//.getElementById("demo1").innerHTML=randomItem.id ;
 		d3.select("#link-"+randomItem.id)
               .style("fill","white")
 	.style("stroke", "white")
+	.style("stroke-width", "4px")
               .transition()
               .delay(1500)
               .duration(500)
               .style("fill","yellow")
 		.style("stroke", "#FCD12A")
+		.style("stroke-width", "2px")
 		
         /*randomItem.forEach(function(d) {
 		document.getElementById("demo1").innerHTML= d.id;
