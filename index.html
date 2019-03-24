@@ -165,7 +165,7 @@ function run(graph) {
   });           
 
   var link = svg.append("g")
-                .style("stroke", " #7E191B")
+                .style("stroke", "red")
                 .selectAll("line")
                 .data(graph.links)
                 .enter().append("line");
@@ -185,9 +185,9 @@ function run(graph) {
       .attr("class", "labels")
       .selectAll("text")
       .data(graph.nodes)
-      .enter().append("text")
-        .attr("class", "label")
-        .text(function(d) { return d.id; });
+      .enter().append("text");
+      // .attr("class", "label")
+       // .text(function(d) { return d.id; });
 
   simulation
       .nodes(graph.nodes)
