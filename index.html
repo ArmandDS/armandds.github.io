@@ -232,6 +232,7 @@ function run(graph) {
          var data = graph.nodes.filter(function(d) { if (Math.random() < 0.5) return d; })
 		
         data.forEach(function(d) {
+		document.getElementById("demo1").innerHTML = d;
           d3.select("#link-"+d.source+"-"+d.target)
               .attr("fill","red")
               .transition()
