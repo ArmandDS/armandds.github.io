@@ -101,7 +101,9 @@ var simulation = d3.forceSimulation()
 //       .iterations(2)
 //     )
   .force("center", d3.forceCenter(120, 120)
-	  );
+	  )
+
+.force("yAxis",d3.forceY(120));
 
 
 const graph = {
