@@ -224,12 +224,12 @@ function run(graph) {
       .links(graph.links);
 
   function ticked() {
-   /*link
+   link
         .attr("x1", function(d) { return d.source.x; })
         .attr("y1", function(d) { return d.source.y; })
         .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; });*/
-	 link.attr("d", function(d) {
+        .attr("y2", function(d) { return d.target.y; });
+/* link.attr("d", function(d) {
         var dx = d.target.x - d.source.x,
             dy = d.target.y - d.source.y,
             dr = Math.sqrt(dx * dx + dy * dy);
@@ -238,7 +238,7 @@ function run(graph) {
             d.source.y + "A" + 
             dr + "," + dr + " 0 0,1 " + 
             d.target.x + "," + 
-            d.target.y;});
+            d.target.y;});*/
 
     node
          .attr("r",5)
