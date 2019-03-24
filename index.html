@@ -92,9 +92,9 @@ var simulation = d3.forceSimulation()
         .strength(0.025))
     //.force("charge", d3.forceManyBody().strength(-200))
 		.force('charge', d3.forceManyBody()
-      .strength(-200)
+      .strength(-100)
       .theta(0.8)
-      .distanceMax(70)
+      .distanceMax(55)
     )
 // 		.force('collide', d3.forceCollide()
 //       .radius(d => 40)
@@ -148,12 +148,24 @@ const graph = {
     {"source": "29", "target": "8", "value": 1},
     {"source": "23", "target": "116", "value": 1},
     {"source": "18", "target": "1", "value": 1} ,
-	  {"source": "1", "target": "2", "value": 1},
+	  {"source": "1", "target": "21", "value": 1},
     {"source": "26", "target": "28", "value": 1},
     {"source": "30", "target": "18", "value": 1},
     {"source": "14", "target": "11", "value": 1},
     {"source": "21", "target": "16", "value": 1},
-    {"source": "23", "target": "1", "value": 1}  
+    {"source": "23", "target": "1", "value": 1},
+	 	  {"source": "12", "target": "22", "value": 1},
+    {"source": "25", "target": "12", "value": 1},
+    {"source": "12", "target": "8", "value": 1},
+    {"source": "14", "target": "8", "value": 1},
+    {"source": "16", "target": "116", "value": 1},
+    {"source": "16", "target": "1", "value": 1} ,
+	  {"source": "1", "target": "2", "value": 1},
+    {"source": "11", "target": "28", "value": 1},
+    {"source": "25", "target": "18", "value": 1},
+    {"source": "25", "target": "11", "value": 1},
+    {"source": "27", "target": "16", "value": 1},
+    {"source": "27", "target": "1", "value": 1} 
   ]
 }
   
