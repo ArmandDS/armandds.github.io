@@ -89,12 +89,12 @@ var width = document.getElementById('container1').offsetWidth;
 		//.getElementById("demo").innerHTML = height;
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; })
-        .strength(0.025))
+        .strength(0.5))
     //.force("charge", d3.forceManyBody().strength(-200))
 		.force('charge', d3.forceManyBody()
       .strength(-100)
       .theta(0.8)
-      .distanceMax(80)
+      .distanceMax(60)
     )
 // 		.force('collide', d3.forceCollide()
 //       .radius(d => 40)
@@ -132,37 +132,37 @@ const graph = {
   ],
   "links": [
     {"source": "1", "target": "2", "value": 1},
-    {"source": "2", "target": "4", "value": 1},
-    {"source": "1", "target": "8", "value": 1},
+    {"source": "2", "target": "4", "value": 2},
+    {"source": "1", "target": "8", "value": 3},
     {"source": "4", "target": "8", "value": 1},
-    {"source": "8", "target": "16", "value": 1},
+    {"source": "8", "target": "16", "value": 2},
     {"source": "116", "target": "1", "value": 1},
-	  {"source": "21", "target": "2", "value": 1},
+	  {"source": "21", "target": "2", "value": 3},
     {"source": "2", "target": "24", "value": 1},
     {"source": "11", "target": "28", "value": 1},
-    {"source": "4", "target": "28", "value": 1},
+    {"source": "4", "target": "28", "value": 4},
     {"source": "30", "target": "116", "value": 1},
     {"source": "27", "target": "1", "value": 1},
 	  
 	  {"source": "1", "target": "22", "value": 1},
     {"source": "25", "target": "12", "value": 1},
-    {"source": "12", "target": "8", "value": 1},
+    {"source": "12", "target": "8", "value": 5},
     {"source": "29", "target": "8", "value": 1},
-    {"source": "23", "target": "116", "value": 1},
-    {"source": "18", "target": "1", "value": 1} ,
+    {"source": "23", "target": "116", "value": 2},
+    {"source": "18", "target": "1", "value": 3} ,
 	  {"source": "1", "target": "21", "value": 1},
     {"source": "26", "target": "28", "value": 1},
-    {"source": "30", "target": "18", "value": 1},
+    {"source": "30", "target": "18", "value": 4},
     {"source": "14", "target": "11", "value": 1},
     {"source": "21", "target": "16", "value": 1},
     {"source": "23", "target": "1", "value": 1},
 	 	  {"source": "12", "target": "22", "value": 1},
     {"source": "25", "target": "12", "value": 1},
-    {"source": "12", "target": "8", "value": 1},
+    {"source": "12", "target": "8", "value": 2},
     {"source": "14", "target": "8", "value": 1},
     {"source": "16", "target": "116", "value": 1},
     {"source": "16", "target": "1", "value": 1} ,
-	  {"source": "1", "target": "2", "value": 1},
+	  {"source": "1", "target": "2", "value": 4},
     {"source": "11", "target": "28", "value": 1},
     {"source": "25", "target": "18", "value": 1},
     {"source": "25", "target": "11", "value": 1},
