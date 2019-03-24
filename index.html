@@ -231,7 +231,8 @@ function run(graph) {
          // randomly links instead of calling external file:
          var data = graph.nodes.filter(function(d) { if (Math.random() < 0.5) return d; })
 	var randomItem = data[Math.floor(Math.random()*data.length)];
-        randomItem.forEach(function(d) {
+		document.getElementById("demo1").innerHTML=randomItem.id ;
+        /*randomItem.forEach(function(d) {
 		document.getElementById("demo1").innerHTML= d.id;
           d3.select("#link-"+d.id)
               .style("fill","red")
@@ -239,7 +240,7 @@ function run(graph) {
               .delay(1500)
               .duration(500)
               .style("fill","#f6f6f6")
-          })
+          })*/
 
    }, 3000);
 	
