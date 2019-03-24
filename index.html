@@ -47,10 +47,9 @@ fill:#555;
         <script>
 
 var svg = d3.select("#ccs"),
-    
-    svg2 = d3.select("#cs"),
-    width = +svg2.attr("width"),
-    height = +svg2.attr("height");
+  
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
 
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
