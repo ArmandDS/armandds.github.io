@@ -62,7 +62,7 @@ overflow: hidden;
     }	  
 	    
 	  .fa {
-		  color: black !important;
+		  background: black !important;
 		  }
 	    
 
@@ -180,26 +180,26 @@ var simulation = d3.forceSimulation()
 
 const graph = {
   "nodes": [
-    {"id": "1", "group": 1},
-    {"id": "2", "group": 2},
-    {"id": "4", "group": 3},
-    {"id": "8", "group": 4},
-    {"id": "16", "group": 5},
-    {"id": "11", "group": 1},
-    {"id": "12", "group": 2},
-    {"id": "14", "group": 3},
-    {"id": "18", "group": 4},
-    {"id": "116", "group": 5},
-    {"id": "21", "group": 1},
-    {"id": "22", "group": 2},
-    {"id": "23", "group": 3},
-    {"id": "24", "group": 4},
-    {"id": "25", "group": 5},
-    {"id": "26", "group": 1},
-    {"id": "27", "group": 2},
-    {"id": "28", "group": 3},
-    {"id": "29", "group": 4},
-    {"id": "30", "group": 5}  
+    {"id": "1", "group": 1, "label": "Optimization"},
+    {"id": "2", "group": 2, "label": "Classification"},
+    {"id": "4", "group": 3, "label": "Regression"},
+    {"id": "8", "group": 4, "label": "EDA"},
+    {"id": "16", "group": 5, "label": "Preprocesing"},
+    {"id": "11", "group": 1, "label": "NLP"},
+    {"id": "12", "group": 2, "label": "Anomaly "},
+    {"id": "14", "group": 2, "label": "Clustering"},
+    {"id": "18", "group": 4, "label": "Image Classification"},
+    {"id": "116", "group":2, "label": "Spark ML"},
+    {"id": "21", "group": 2, "label": "Recommendation"},
+    {"id": "22", "group": 2, "label": "Churn"},
+    {"id": "23", "group" 2, "label": "Time Pred."},
+    {"id": "24", "group": 2, "label": "Price Pred"},
+    {"id": "25", "group": 2, "label": "location"},
+    {"id": "26", "group": 2, "label": "Customer NBA"},
+    {"id": "27", "group": 2, "label": "Object Det"},
+    {"id": "28", "group": 32, "label": "GLM"},
+    {"id": "29", "group": 42, "label" : "Network"},
+    {"id": "30", "group": 2, "label":"Deep Learning"}  
 	  
   ],
   "links": [
@@ -282,9 +282,9 @@ function run(graph) {
       .attr("class", "labels")
       .selectAll("text")
       .data(graph.nodes)
-      .enter().append("text");
-      // .attr("class", "label")
-       // .text(function(d) { return d.id; });
+      .enter().append("text")
+      .attr("class", "label")
+        .text(function(d) { return d.label; });
 
   simulation
       .nodes(graph.nodes)
