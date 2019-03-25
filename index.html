@@ -275,8 +275,11 @@ function run(graph) {
           .call(d3.drag()
               .on("start", dragstarted)
               .on("drag", dragged)
-              .on("end", dragended));
-  
+              .on("end", dragended))
+   .on("click", function (d) {
+      location.href = d.url;
+  });
+
   var label = svg.append("g")
       .attr("class", "labels")
       .selectAll("text")
@@ -284,7 +287,7 @@ function run(graph) {
       .enter().append("text")
       .attr("class", "label")
        .text(function(d) { return d.label; });
-
+ 
   simulation
       .nodes(graph.nodes)
       .on("tick", ticked);
