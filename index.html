@@ -61,8 +61,8 @@ overflow: hidden;
     
     }	  
 	    
-	  .fa {
-		  background: black !important;
+	  .fa-linkedin {
+		  color: black !important;
 		  }
 	    
 
@@ -282,9 +282,9 @@ function run(graph) {
       .attr("class", "labels")
       .selectAll("text")
       .data(graph.nodes)
-      .enter().append("text")
-      .attr("class", "label")
-        .text(function(d) { return d.label; });
+      .enter().append("text");
+      //attr("class", "label")
+        //text(function(d) { return d.label; });
 
   simulation
       .nodes(graph.nodes)
