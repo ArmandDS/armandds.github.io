@@ -271,7 +271,7 @@ function run(graph) {
   .selectAll("circle")
             .data(graph.nodes)
   .enter().append("circle")
-          .attr("r", 2)
+          .attr("r", 10)
            .attr("id", function(d) { return "link-"+d.id; })
           .call(d3.drag()
               .on("start", dragstarted)
