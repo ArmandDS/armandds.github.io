@@ -286,7 +286,10 @@ function run(graph) {
       .data(graph.nodes)
       .enter().append("text")
       .attr("class", "label")
-       .text(function(d) { return d.label; });
+       .text(function(d) { return d.label; })
+  .on("click", function (d) {
+      location.href = d.url;
+  });
  
   simulation
       .nodes(graph.nodes)
