@@ -71,7 +71,7 @@ overflow: hidden;
 	    
     #projects2{
 
-    background-image: url("/index_files/960x0.jpg") !important;
+    background-image: url("/index_files/fondo4.jpg") !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
 	
@@ -333,9 +333,9 @@ function run(graph) {
 		d3.select("#link-"+randomItem.id)
               .style("fill","white")
 	.style("stroke", "white")
-	.style("stroke-width", "4px")
+	.style("stroke-width", "6px")
               .transition()
-              .delay(1000)
+              .delay(500)
               .duration(500)
               .style("fill","#800000")
 		.style("stroke", "#DC143C")
@@ -346,12 +346,12 @@ function run(graph) {
           d3.select("#link-"+d.id)
               .style("fill","red")
               .transition()
-              .delay(1500)
+              .delay(500)
               .duration(500)
               .style("fill","#f6f6f6")
           })*/
 
-   }, 1500);
+   }, 1000);
 	
 
   function ticked() {
