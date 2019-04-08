@@ -296,7 +296,7 @@ function run(graph) {
   .selectAll("circle")
             .data(graph.nodes)
   .enter().append("circle")
-          .attr("r", radios)
+          .attr("r", radios - 0.75)
            .attr("id", function(d) { return "link-"+d.id; })
           .call(d3.drag()
               .on("start", dragstarted)
@@ -376,13 +376,13 @@ function run(graph) {
             d.target.y;});*/
 
     node
-         .attr("r",7)
+         .attr("r",radios -0.75)
          .style("fill", "#800000")
 	  .style("opacity", "0.7")
          .style("stroke", "#DC143C")
          .style("stroke-width", "2px")
-         .attr("cx", function (d) { return d.x+5; })
-         .attr("cy", function(d) { return d.y-3; });
+        // .attr("cx", function (d) { return d.x+5; })
+         //.attr("cy", function(d) { return d.y-3; });
     
     label
     		.attr("x", function(d) { return d.x; })
