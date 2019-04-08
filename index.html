@@ -85,7 +85,7 @@ li > a {
 background: black !important;
 	    }
 	    
-.node:hover {
+.nodes:hover {
 cursor:pointer;
 }
 .label:hover {
@@ -198,7 +198,7 @@ var simulation = d3.forceSimulation()
         .strength(0.8))
  	.force('charge', d3.forceManyBody()
       .strength(-250)
-      .distanceMax(170)
+      .distanceMax(130)
       .distanceMin(2)
     )
 .force("yAxis",d3.forceY(120));
