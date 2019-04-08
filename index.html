@@ -193,12 +193,12 @@ var width = document.getElementById('container1').offsetWidth;
 		//.getElementById("demo").innerHTML = height;
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; })
-        .strength(0.5))
+        .strength(0.8))
     //.force("charge", d3.forceManyBody().strength(-200))
 		.force('charge', d3.forceManyBody()
-      .strength(-250)
+      .strength(-220)
       .theta(0.8)
-      .distanceMax(110)
+      .distanceMax(100)
     )
 // 		.force('collide', d3.forceCollide()
 //       .radius(d => 40)
@@ -390,7 +390,7 @@ function run(graph) {
     label
     		.attr("x", function(d) { return d.x; })
             .attr("y", function (d) { return d.y; })
-            .style("font-size", "10px").style("fill", "#ffe6e6");
+            .style("font-size", "8px").style("fill", "#ffe6e6");
   }
 }
 
