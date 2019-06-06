@@ -196,7 +196,7 @@ var radios = 7;
 		//.getElementById("demo").innerHTML = height;
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; })
-        .strength(0.8))
+        .strength(0.2))
  	.force('charge', d3.forceManyBody()
       .strength(-100)
       .distanceMax(100)
