@@ -196,10 +196,10 @@ var radios = 7;
 		//.getElementById("demo").innerHTML = height;
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; })
-        .strength(0.8))
+        .strength(0.5))
  	.force('charge', d3.forceManyBody()
-      .strength(-200)
-      .distanceMax(90)
+      .strength(-300)
+      .distanceMax(120)
       .distanceMin(2)
     )
 .force("yAxis",d3.forceY(110));
