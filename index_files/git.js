@@ -9,7 +9,7 @@ jQuery.fn.loadRepositories = function(username) {
     $.githubUser(username, function(data) {
         var repos = data.data; // JSON Parsing
         sortByName(repos);
-        console.log(repos);    
+        // console.log(repos);    
         var list = $('<div/>');
         target.empty().append(list);
         $(repos.slice(0,9)).each(function() {
