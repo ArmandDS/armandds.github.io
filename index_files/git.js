@@ -59,9 +59,6 @@ jQuery.fn.loadRepositories = function(username) {
 // https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/studytact
 
 
-jQuery.MediumUser = function( callback) {
-   jQuery.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@KonradDaWo?callback=?',callback);
-}
  
 jQuery.fn.loadMedium = function() {
     this.html("<span>Querying Medium Post...</span>");
