@@ -67,14 +67,14 @@ body, html {
 
 .main-button:hover {
 	background-color: transparent;
-    color: rgb(100, 255, 218);
+    color: #78b3db;
     -webkit-transition: .3s ease-in;
     transition: .3s ease-in;
 }
 
 
 .main-button{
-  color: rgb(100, 255, 218);
+  color: #78b3db;
     background-color: transparent;
     font-size: 14px;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
@@ -83,7 +83,7 @@ body, html {
     margin-top: 50px;
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(100, 255, 218);
+    border-color: #78b3db;
     border-image: initial;
     border-radius: 3px;
     padding: 1.25rem 1.75rem;
@@ -111,7 +111,7 @@ body, html {
 .header li a:hover {
     display: block;
     padding: 5px;
-    color: rgb(100, 255, 218);
+    color: #78b3db;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
     background-color: rgb(10, 25, 47);
 }
@@ -286,7 +286,7 @@ body, html {
 }
 
  a:hover .blog__intro {
-  color: rgb(100, 255, 218) !important;
+  color: #78b3db !important;
 }
 
 ul {
@@ -295,7 +295,7 @@ ul {
 
 
 a:hover {
-  color: rgb(100, 255, 218) !important;
+  color: #78b3db !important;
   text-decoration: none !important;
   /*font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;*/
 }
@@ -334,7 +334,7 @@ a {
 
  .text-center .border  {
 
-border:1px solid rgb(100, 255, 218) !important;
+border:1px solid #78b3db !important;
 }
 
 .row {
@@ -385,7 +385,7 @@ border:1px solid rgb(100, 255, 218) !important;
 	    user-select: none;
 	}
 	.header .menu-icon .navicon {
-	    background: rgb(100, 255, 218);
+	    background: #78b3db;
 	    display: block;
 	    height: 2px;
 	    position: relative;
@@ -394,7 +394,7 @@ border:1px solid rgb(100, 255, 218) !important;
 	    width: 18px;
 	}
 	.header .menu-icon .navicon:after, .header .menu-icon .navicon:before{
-	    background: rgb(100, 255, 218);
+	    background: #78b3db;
 	    display: block;
 	    height: 2px;
 	    position: relative;
